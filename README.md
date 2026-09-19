@@ -2,7 +2,7 @@
 
 A RESTful E-commerce API built with **Node.js**, **Express.js**, and **MongoDB**.
 
-This project provides a scalable backend for an e-commerce application, including category management, product management, authentication, and other essential e-commerce functionalities.
+The project provides backend APIs for managing categories, products, users, authentication, and other core e-commerce functionality.
 
 ## 🚀 Technologies
 
@@ -18,19 +18,13 @@ This project provides a scalable backend for an e-commerce application, includin
 ## 📁 Project Structure
 
 ```text
-E-commerce-NodeJs/
-│
+ecommerce-api/
 ├── config/
 │   └── database.js
-│
 ├── models/
-│
 ├── routes/
-│
 ├── services/
-│
 ├── middlewares/
-│
 ├── config.env
 ├── server.js
 ├── package.json
@@ -42,13 +36,13 @@ E-commerce-NodeJs/
 Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/E-commerce-NodeJs.git
+git clone https://github.com/Zeyadtharwat66/ecommerce-api.git
 ```
 
 Navigate to the project:
 
 ```bash
-cd E-commerce-NodeJs
+cd ecommerce-api
 ```
 
 Install dependencies:
@@ -67,9 +61,7 @@ PORT=8000
 DB_URI=your_mongodb_connection_string
 ```
 
-Replace the values with your own configuration.
-
-> **Note:** Do not commit your `config.env` file if it contains sensitive information.
+> **Note:** Do not commit your `config.env` file or real database credentials.
 
 ## ▶️ Running the Project
 
@@ -85,7 +77,7 @@ Or:
 nodemon server.js
 ```
 
-The API will run on:
+The API runs on:
 
 ```text
 http://localhost:8000
@@ -95,10 +87,10 @@ http://localhost:8000
 
 ### Categories
 
-| Method | Endpoint             | Description           |
-| ------ | -------------------- | --------------------- |
-| GET    | `/api/v1/categories` | Get all categories    |
-| POST   | `/api/v1/categories` | Create a new category |
+| Method | Endpoint | Description |
+| ------ | -------- | ----------- |
+| GET | `/api/v1/categories` | Get all categories |
+| POST | `/api/v1/categories` | Create a new category |
 
 ### Example: Create Category
 
@@ -140,19 +132,18 @@ Example response:
 
 ## 🔮 Future Improvements
 
+* Complete product management
 * User authentication and authorization
-* Product management
 * Shopping cart
 * Orders and checkout
 * Reviews and ratings
 * Product filtering and searching
 * Pagination
-* Advanced error handling
 * API documentation with Swagger
 
 ## 👨‍💻 Author
 
-**Ziad Tharwat**
+**Zeyad Tharwat**
 
 ## 📄 License
 
